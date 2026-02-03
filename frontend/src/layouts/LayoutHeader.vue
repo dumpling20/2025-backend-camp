@@ -8,7 +8,7 @@
             @click="closeMobileMenu"
             class="flex items-center"
           >
-            <img src="/logo-text.png" alt="LiveFit+" class="h-6 w-auto" />
+            <img src="/logo-text-v2.png" alt="LiveFit+" class="h-6 w-auto" />
             <span class="sr-only">LiveFit+</span>
           </router-link>
         </h1>
@@ -22,7 +22,7 @@
                 to="/coaches"
                 class="text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] pb-1 border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
-                >尋找教練</router-link
+                >�???��??�?</router-link
               >
             </li>
             <li>
@@ -30,7 +30,7 @@
                 to="/fitness-plans"
                 class="text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] pb-1 border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
-                >健身方案</router-link
+                >??�身??��??</router-link
               >
             </li>
           </ul>
@@ -41,31 +41,31 @@
             v-if="!name"
             to="/login"
             class="bg-secondary-800 hover:bg-secondary-700 text-primary-900 font-medium text-base leading-[150%] px-5 py-3 rounded transition-colors h-12 flex items-center justify-center"
-            >立即加入</router-link
+            >�???��?????</router-link
           >
           <p v-if="name" class="font-bold text-primary-0">
-            歡迎，{{ name }}您好！
+            歡�??�?{{ name }}??�好�?
           </p>
           <router-link
             v-if="role === 'USER'"
             to="/user/dashboard"
             class="bg-secondary-800 hover:bg-secondary-700 text-primary-900 font-medium text-base leading-[150%] px-5 py-3 rounded transition-colors h-12 flex items-center justify-center"
           >
-            會員介面
+            ?????��?????
           </router-link>
           <router-link
             v-if="role === 'COACH'"
             to="/coach/profile"
             class="bg-secondary-800 hover:bg-secondary-700 text-primary-900 font-medium text-base leading-[150%] px-5 py-3 rounded transition-colors h-12 flex items-center justify-center"
           >
-            教練介面
+            ???練�?????
           </router-link>
           <router-link
             v-if="name"
             to="/"
             @click="logout"
             class="text-primary-0 hover:text-neutral-300 transition-colors flex items-center justify-center"
-            aria-label="登出"
+            aria-label="??��??"
           >
             <svg
               class="w-6 h-6"
@@ -127,7 +127,7 @@
         >
           <ul class="flex flex-col gap-3 px-4">
             <li v-if="name">
-              <p class="font-bold text-primary-0">歡迎，{{ name }} 您好！</p>
+              <p class="font-bold text-primary-0">歡�??�?{{ name }} ??�好�?</p>
             </li>
             <li>
               <router-link
@@ -136,7 +136,7 @@
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
               >
-                尋找教練
+                �???��??�?
               </router-link>
             </li>
             <li>
@@ -146,7 +146,7 @@
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
               >
-                健身方案
+                ??�身??��??
               </router-link>
             </li>
             <li v-if="!name">
@@ -156,7 +156,7 @@
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
               >
-                立即加入
+                �???��?????
               </router-link>
             </li>
             <li v-if="role === 'USER'">
@@ -166,7 +166,7 @@
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
               >
-                會員介面
+                ?????��?????
               </router-link>
             </li>
             <li v-if="role === 'COACH'">
@@ -176,7 +176,7 @@
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] border-b-2 border-transparent"
                 active-class="!font-bold !leading-[120%] !border-secondary-800 !text-primary-0"
               >
-                教練介面
+                ???練�?????
               </router-link>
             </li>
             <li v-if="name">
@@ -184,7 +184,7 @@
                 @click="closeMobileMenu(), logout()"
                 class="inline-block py-2 text-neutral-300 hover:text-primary-0 transition-all font-medium text-base leading-[150%] w-full text-left"
               >
-                登出
+                ??��??
               </button>
             </li>
           </ul>
