@@ -15,15 +15,17 @@
               <router-link
                 to="/coaches"
                 class="text-neutral-300 hover:text-primary-0 transition-colors font-medium text-base leading-[150%]"
-                >尋找教練</router-link
               >
+                尋找教練
+              </router-link>
             </li>
             <li>
               <router-link
                 to="/fitness-plans"
                 class="text-neutral-300 hover:text-primary-0 transition-colors font-medium text-base leading-[150%]"
-                >健身方案</router-link
               >
+                健身方案
+              </router-link>
             </li>
           </ul>
         </nav>
